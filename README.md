@@ -1,9 +1,11 @@
 # Travaux pratiques pour formation kubernetes
 
 ## Principe
+
 Chaque TP est disponible dans sa propre branche.
 Pour choisir un tp, utilisez la commande
-```
+
+```bash
 git checkout tp-xx
 ```
 
@@ -15,10 +17,13 @@ Il peut être plus facile de le lire depuis un navigateur directement sur github
 ## TPs
 
 ### [TP no 00](https://github.com/jcanongfi/kubernetes_tp/tree/tp-00)
+
 Accès à l'environnement du TP
 
 ### [TP no 01](https://github.com/jcanongfi/kubernetes_tp/tree/tp-01)
+
 Premier contact avec kubernetes
 
 ### [TP no 02](https://github.com/jcanongfi/kubernetes_tp/tree/tp-02)
+
 Premier déploiement
