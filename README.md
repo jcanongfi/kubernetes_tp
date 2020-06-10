@@ -16,9 +16,9 @@ Vérifiez que votre environnement est fonctionnel :
 - [ ] conntectez-vous sur la VM avec les accès donnés par le formateur (avec putty, hostname, user, password)
 - [ ] testez la commande CLI de kubernetes
 
-       ```bash
-       kubectl version 
-       ```
+```bash
+kubectl version 
+```
 
   Résultat attendu : la version du client ainsi que la version du cluster kubernetes
 ```bash
@@ -28,13 +28,13 @@ Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.8-eks-e16
 
 - [ ] obtenez un aperçu des commandes disponibles
 
-       ```bash
-       kubectl
-       ```
+```bash
+kubectl
+```
 
 - [ ] obtenez des informations sur votre cluster
 
-       ```bash
-       kubectl cluster-info
-       ```
+```bash
+kubectl cluster-info
+```
 
