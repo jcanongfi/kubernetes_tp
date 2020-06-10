@@ -38,3 +38,23 @@ kubectl
 kubectl cluster-info
 ```
 
+- [ ] observez le nombre de noeuds
+
+```bash
+kubectl get nodes
+```
+
+- [ ] obtenez des informations sur les composants du master (control plane)
+
+```bash
+kubectl get componentstatus
+```
+
+- [ ] observez tous les objets déjà créés (ou presque)
+
+```bash
+kubectl get all
+```
+
+- [ ] faites part de vos questions et observations à votre formateur
+
