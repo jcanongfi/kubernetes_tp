@@ -2,7 +2,7 @@
 
 ## TP no 04
 
-Ajoutons de la robustesse et de l'élasticité
+Ajoutons de l'élasticité
 
 ### Que se passe-t-il si mon pod meurt ?
 
