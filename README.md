@@ -203,7 +203,7 @@ Nous pouvons forcer notre namespace personnel via la commande suivante :
 
 ```bash
 kubectl config set-context jcanon@eks-00.eu-west-3.eksctl.io --namespace=<namespace>
-```bash
+```
 
 A partir de maintenant, le namespace par défaut sera le votre.
 Mais souvenez-vous que certaines ressources sont globales et non liées à un namespace !
