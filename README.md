@@ -27,3 +27,9 @@ Premier contact avec kubernetes, faire sa place
 
 Premier container... Qui a dit pod ?
 
+### [TP no 03](https://github.com/jcanongfi/kubernetes_tp/tree/tp-03)
+
+Assurer le service !
+
+
+
