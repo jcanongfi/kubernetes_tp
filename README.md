@@ -21,8 +21,9 @@ Accès à l'environnement du TP
 
 ### [TP no 01](https://github.com/jcanongfi/kubernetes_tp/tree/tp-01)
 
-Premier contact avec kubernetes
+Premier contact avec kubernetes, faire sa place
 
 ### [TP no 02](https://github.com/jcanongfi/kubernetes_tp/tree/tp-02)
 
-Premier déploiement
+Premier container... Qui a dit pod ?
+
