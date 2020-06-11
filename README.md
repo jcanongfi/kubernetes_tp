@@ -60,4 +60,81 @@ kubectl describe namespace <namespace>
 kubectl get namespaces
 ```
 
+Note : la commande describe nous montre qu'il est possible d'ajouter des labels et des annotations à un namespace (ici, il n'y en a pas).
+
+Détruisez le namespace, nous allons le recréer avec une seconde méthode
+
+```bash
+kubectl delete namespace <namespace>
+```
+
+#### En utilisant un fichier yaml
+
+Dans le répertoire courant, vous trouverez le fichier namespace.yaml.
+Editez-le et remplacez le nom du namespace par celui que vous avez choisi.
+
+De plus, vous pouvez en profiter pour créer un ou plusieurs labels (clef/valeur). Vous en avez deux en exemple dans le fichier.
+
+Enfin, vous pouvez observer qu'il n'y a pas de catégorie spec pour ce yaml. Pour namespace, elle n'est pas obligatoire, mais nous verrons qu'elle existe.
+
+Une fois le fichier satisfaisant, créez à nouveau le namespace :
+
+```bash
+kubectl create -f namespace.yaml
+```
+
+Note : pour la création avec un fichier, on ne précise pas le type de ressource (kind). En effet, tout est déjà décrit dans le fichier.
+
+Vérifiez (y compris la présence des labels) :
+
+```bash
+kubectl describe namespace <namespace>
+kubectl get namespaces
+```
+
+Vous pouvez le détruire une dernière fois, nous allons utiliser une dernière méthode.
+
+```bash
+kubectl delete namespace <namespace>
+```
+
+#### En utilisant un fichier json
+
+Vous remarquerez que je ne vous ai pas préparé de fichier json dans ce tp.
+Pour écrire un tel fichier, il faudrait revenir à la documentation, la référence API de kubernetes ou un moteur de recherche pour obtenir un exemple tout fait.
+
+Je vais vous proposer une façon détournée assez efficace pour gagner du temps.
+
+L'option --dry-run vous permet de jouer à blanc une commande. La stratégie "client" ne joue que côté client, tandis que la stratégie "server" ajoute les propriétés du serveur.
+Essayons :
+
+```bash
+kubectl create namespace toto --dry-run=client
+```
+
+Effectivement, il n'a rien fait.
+
+La seconde astuce, que nous allons combiner à la première, est le format de sortie du résultat via l'option -o.
+Vous pouvez choisir entre yaml, json, wide ou des formats custom.
+Utilisons ici la sortie json :
+
+```bash
+kubectl create namespace toto --dry-run=client -o json
+```
+
+Youpi, ça marche !
+Conservons le résultat dans un fichier namespace.json.
+
+```bash
+kubectl create namespace toto --dry-run=client -o json > namespace.json
+```
+
+Editez le fichier selon vos souhaits. Notamment, remplacez "toto" par le nom de votre namespace.
+Et recréez pour la dernière fois votre namespace.
+
+```bash
+kubectl create -f namespace.json
+```
+
+Le TP est terminé. On va conserver ce namespace pour les autres TP.
 
