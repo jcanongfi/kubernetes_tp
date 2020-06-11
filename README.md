@@ -31,5 +31,14 @@ Premier container... Qui a dit pod ?
 
 Assurer le service !
 
+### [TP no 04](https://github.com/jcanongfi/kubernetes_tp/tree/tp-04)
+
+Ajoutons de la robustesse et de l'élasticité
+
+### [TP no 05](https://github.com/jcanongfi/kubernetes_tp/tree/tp-05)
+
+Et pour les montées de version ?
+
+
 
 
