@@ -76,8 +76,8 @@ kubectl create -f web-deployment.yaml
 
 Observez le résultat :
 * Le Deployement est créé (avec son nom)
-* Un ReplicaSet est créé (avec pour nom replicaset.apps/<nom-deployement>-9999999999)
-* Des pods sont créés (avec pour nom pod/<nom-deployement>-9999999999-abcde)
+* Un ReplicaSet est créé (avec pour nom replicaset.apps/<nom-deployment>-9999999999)
+* Des pods sont créés (avec pour nom pod/<nom-deployment>-9999999999-abcde)
 
 ```bash
 kubectl get all
@@ -90,7 +90,7 @@ Il est temps de changer de version
 
 ### Montée de version par fichier yaml
 
-La méthode la plus simple et classique consiste à modifier le fichier web-deployement.yaml.
+La méthode la plus simple et classique consiste à modifier le fichier web-deployment.yaml.
 Mettez à jour l'image pour passer à la version 1.18 de nginx, et appliquez.
 
 ```bash
@@ -186,7 +186,7 @@ kubectl rollout status deployment web-deployment
 
 On voit que ça n'avance pas. Vous pouvez sortir avec un Ctrl-C
 
-On constate aussi le problème avec un describe sur le deployement
+On constate aussi le problème avec un describe sur le deployment
 
 ```bash
 kubectl describe deployment web-deployment
