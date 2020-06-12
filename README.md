@@ -124,7 +124,7 @@ C'est déjà une bonne information (la ligne de commande saisie), mais ça ne no
 Il est possible si vous le souhaitez de le préciser librement avec une annotation :
 
 ```bash
-kubectl deployment/web-deployment kubernetes.io/change-cause="image mis à jour en 1.18" --record
+kubectl annotate deployment/web-deployment kubernetes.io/change-cause="image mis à jour en 1.18" --record
 ```
 
 Regardez, c'est quand même plus explicite !
