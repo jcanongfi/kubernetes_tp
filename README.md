@@ -118,7 +118,7 @@ Maintenant observez à nouveau le service, et en particulier la liste des Endpoi
 kubectl describe service webserver-service
 ```
 
-Les 3 pods font bien partis du service.
+Les 3 pods font bien partie du service.
 
 Enfin, décidons d'augmenter (ou de diminuer) la capacité du replicaset
 
