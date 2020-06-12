@@ -166,7 +166,7 @@ kubectl rollout undo deployment web-deployment
 Et si on veut revenir encore plus en arrière, on utilise --to-revision
 
 ```bash
-kubectl rollout undo deployment web-deployment --to-revision=2
+kubectl rollout undo deployment web-deployment --to-revision=1
 ```
 
 ### Observez un cas de blocage
