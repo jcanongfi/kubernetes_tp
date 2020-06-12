@@ -47,7 +47,7 @@ kubectl get nodes
 - [ ] obtenez des informations sur les composants du master (control plane)
 
 ```bash
-kubectl get componentstatus
+kubectl get componentstatuses
 ```
 
 - [ ] observez tous les objets déjà créés (ou presque)
