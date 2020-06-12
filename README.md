@@ -125,7 +125,7 @@ Enfin, décidons d'augmenter (ou de diminuer) la capacité du replicaset
 Soit vous modifiez le contenu du fichier et appliquez celui-ci à nouveau :
 
 ```bash
-kubectl apply -f replicaset.yaml
+kubectl apply -f web-replicaset.yaml
 ```
 
 Soit vous pouvez le faire dynamiquement (mais n'oubliez pas que le fichier yaml ne représentera plus la réalité...):
