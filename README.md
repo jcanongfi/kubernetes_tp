@@ -13,7 +13,7 @@ Afin de pouvoir pratiquer sur kubernetes au travers des différents tps, nous vo
 ### Vérification de votre environnement
 
 Vérifiez que votre environnement est fonctionnel :
-- [ ] conntectez-vous sur la VM avec les accès donnés par le formateur (avec putty, hostname, user, password)
+- [ ] connectez-vous sur la VM avec les accès donnés par le formateur (avec putty, hostname, user, password)
 - [ ] testez la commande CLI de kubernetes
 
 ```bash
