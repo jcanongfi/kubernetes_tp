@@ -47,7 +47,7 @@ kubectl create -f pod-nginx.yaml
 
 A ce stade, je dois avoir :
 * un élève heureux  :smile:
-* 3 élèves  :disappointed_relieved:  :angry:  :sob:
+* etles autres élèves  :disappointed_relieved:  :angry:  :sob:
 
 En effet, nous travaillons sur un même cluster et nous avons oublié de spécifier la notion de namespace.
 Pour l'heureux élève qui aura réussi à créer son pod dans le namespace default, il faut le détruire.
