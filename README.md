@@ -1,4 +1,4 @@
-# Travaux pratiques pour formation docker
+# Travaux pratiques pour formation kubernetes
 
 ## TP no 03
 
