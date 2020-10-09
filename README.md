@@ -19,7 +19,7 @@ Soit vous disposez du fichier yaml d'origine (c'est bien!)
 Soit vous le regénérez via la commande suivante :
 
 ```bash
-kubectl get pods webserver -o yaml >webserver-pod.yaml
+kubectl run webserver --image=nginx --dry-run=client -o yaml >webserver-pod.yaml
 ```
 
 Ajoutez un (ou plusieurs) label(s) de votre choix dans les metadata de votre pod :
