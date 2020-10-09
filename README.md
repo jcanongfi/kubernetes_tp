@@ -202,8 +202,15 @@ kubectl config current-context
 Nous pouvons forcer notre namespace personnel via la commande suivante :
 
 ```bash
-kubectl config set-context aks-00 --namespace=<namespace>
+kubectl config set-context <current-context> --namespace=<namespace>
 ```
+
+Autre possibilité en une unique étape :
+
+```bash
+kubectl config set-context $(kubectl config current-context) --namespace=<namespace>
+```
+
 
 A partir de maintenant, le namespace par défaut sera le votre.
 Mais souvenez-vous que certaines ressources sont globales et non liées à un namespace !
